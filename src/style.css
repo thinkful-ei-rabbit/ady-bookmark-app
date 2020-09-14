@@ -1,0 +1,89 @@
+/* <!-- custom styling for all icons --> */
+.fas, .far {
+  border: 1px solid white;
+}
+
+/* <!-- custom styling for specific icons --> */
+.fa-bookmark checked {
+  color: purple;
+}
+
+.fa-user-ninja.vanished {
+  opacity: 0.0;
+}
+
+.fa-bookmark {
+  color: #f79fff;
+}
+  
+body {
+  width: 95%;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
+  background-color: rgb(204, 204, 204);
+}
+
+.bookmark {
+  position: relative;
+  width: 100%;
+  height: 26px;
+  background: #ffffff;
+  color: #000000;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  text-align: center;
+  font-size: 18px;
+}
+
+i.open {
+  margin-left: 30px;
+}
+
+i.close {
+  margin-left: 20px;
+  display: none;
+}
+
+button  {
+  background-color: #f79fff; /* purple */
+  border-color: (229,229,229);
+  color: black;
+  width: 110px;
+  padding: 10px 10px;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul, li {
+  list-style: none;
+  margin-left: -6%;
+}
+
+header {
+  /* Sets background color to white */
+  background-color: #ffffff;
+  /* margin-bottom: 40px; */
+  color: #000000;
+  text-align: center;
+  /* padding-top: 20px; */
+}
+
+h1 {
+  color: #000000;
+  text-align: center;
+  margin: 0;
+  /* padding-top: 20px; */
+}
+  
+  
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gap-sm {
+  height: 50px;
+  width: auto;
+}
