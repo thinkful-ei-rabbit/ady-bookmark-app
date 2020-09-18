@@ -1,22 +1,26 @@
 As a user:
 
-I can add bookmarks to my bookmark list. Bookmarks contain:
+1. I can add bookmarks to my bookmark list. Bookmarks contain:
 
-title
-url link
-description
-rating (1-5)
-I can see a list of my bookmarks when I first open the app
+# title
+# url link
+# description
+# rating (1-5)
 
-All bookmarks in the list default to a "condensed" view showing only title and rating
-I can click on a bookmark to display the "detailed" view
+2. I can see a list of my bookmarks when I first open the app.
 
-Detailed view expands to additionally display description and a "Visit Site" link
-I can remove bookmarks from my bookmark list
+3. All bookmarks in the list default to a "condensed" view showing only title and rating.
 
-I receive appropriate feedback when I cannot submit a bookmark
+4. I can click on a bookmark to display the "detailed" view.
 
-Check all validations in the API documentation (e.g. title and url field required)
-I can select from a dropdown (a <select> element) a "minimum rating" to filter the list by all bookmarks rated at or above the chosen selection
+5. Detailed view expands to additionally display description and a "Visit Site" link.
 
-(Extension feature - optional) I can edit the rating and description of a bookmark in my list
+6. I can remove bookmarks from my bookmark list.
+
+7. I receive appropriate feedback when I cannot submit a bookmark.
+
+8. Check all validations in the API documentation (e.g. title and url field required).
+
+9. I can select from a dropdown (a <select> element) a "minimum rating" to filter the list by all bookmarks rated at or above the chosen selection.
+
+10. I can edit the rating and description of a bookmark in my list.

@@ -1,0 +1,321 @@
+/* ---------- CSS ---------- */
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 85%;
+  background-image: url("../background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main {
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 0 auto .33em;
+}
+
+h2,
+h3 {
+  font-size: 1.1rem;
+  font-variant: small-caps;
+  margin: 0;
+}
+
+.bookmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bookmark-list>li {
+  border: 1px solid #F79FFF;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.bookmark-name {
+  background-color: #F6BEFC;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+ font-size: 1.8rem;
+ font-variant: small-caps;
+}
+
+/* ---------- flexbox styling ---------- */
+.left-side {
+  flex: 1;
+}
+
+.right-side {
+  flex: 2;
+  text-align: end;
+}
+
+.flex-link {
+  flex: 1;
+  margin: auto;
+}
+
+.flex-desc {
+  flex: 4;
+  line-height: 18px;
+  cursor: crosshair;
+  font-size: large;
+  padding: 6px;
+}
+
+
+/* ---------- Button Styles ---------- */
+.flex-button {
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: solid #FFFFFF;
+  background-color: #F79FFF;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  margin: auto;
+}
+
+.flex-button:hover {
+  background-color: #F79FFF
+}
+
+button,
+input[type="text"],
+select.js-filter-rating {
+  padding: 6px;
+  font-size: 1.1rem;
+  font-variant: small-caps;
+}
+
+button.js-add-bookmark,
+select.js-filter-rating {
+  min-width: 48%;
+}
+
+button:hover {
+  cursor: crosshair;
+}
+
+button:active {
+  
+  box-shadow: 3px 3px 6px #cccccc;
+}
+
+.expand-buttons {
+  min-width: 75px;
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: solid #E5E5E5;
+  background-color: #F79FFF;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin: auto;
+}
+
+.expand-buttons:hover {
+  background-color: #F79FFF
+}
+
+.add-button {
+  max-width: 50%;
+  text-align: center;
+  min-width: 75px;
+  padding: 9px 16px;
+  border-radius: 16px;
+  border: solid #E5E5E5;
+  background-color: #F79FFF;
+  color: #FFFFFF;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  margin: auto;
+ }
+ 
+.add-button:hover {
+  background-color: #F6BEFC
+}
+
+/* ---------- List Styles ---------- */ 
+.top-half {
+  background-color: rgb(247, 159, 255, 0.3);
+  flex: 1;
+  padding: 1rem;
+  
+}
+
+.bottom-half {
+  background-color: rgb(255, 255, 255, 0.3);
+  flex: 1;
+  padding: 1rem;
+}
+
+.even-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-between,
+.flex-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.flex-details {
+  margin: 16px 0 0 16px;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+/*------ Input Styles -------*/
+input {
+  border: none;
+}
+
+.shadow {
+  box-shadow: 6px 6px 6px #cccccc;
+}
+
+.textarea-newadd {
+  width: 100%;
+}
+
+.js-bookmark-url-entry,
+.js-bookmark-title-entry {
+  width: 100%;
+}
+
+.padding {
+  padding: 22px;
+}
+
+fieldset {
+  max-width: 100%;
+}
+
+/*------- Rating Styles --------*/
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 18px;
+  line-height: 18px;
+  font-size: 33px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+  padding-top: 16px;
+}
+
+.rating label:last-child .icon {
+  color: #cccccc;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+  color: #F79FFF;
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
+  color: #cccccc;
+}
+
+.background-barvees {
+  color: #cccccc;
+  position: absolute;
+  z-index: 1;
+}
+
+.colored-barvees {
+  color: #F79FFF;
+  position: absolute;
+  z-index: 2;
+}
+
+.barvee-size {
+  font-size: 90px;
+  margin-top: 10px
+}
+
+@media all and (min-width: 600px) {
+  body {
+      max-width: 600px;
+  }
+
+  button.js-add-bookmark,
+  select.js-filter-rating {
+      width: 110px;
+      min-width: 0px;
+  }
+
+  .flex-direction {
+      flex-direction: row;
+  }
+
+  .flex-desktop {
+      width: 100%;
+  }
+
+  .flex-desc {
+      flex: 4;
+  }
+}
