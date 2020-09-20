@@ -6,9 +6,9 @@ import api from './api';
 
 const generateHomePageHTML = () => {
   return `
-    <section class="container">
+    <section class="container shadow">
         <h1>BOOKMARKn</h1>
-        <div class="error-container shadow"></div>
+        <div class="error-container"></div>
         <div class="even-flex js-add-bookmark-button ">
           <button class='js-add-bookmark shadow'></button>
           <select class='js-filter-rating shadow'>
@@ -22,7 +22,7 @@ const generateHomePageHTML = () => {
         </div>
         <div id="js-add-new-bookmark" class="js-add-new-bookmark"></div>
     </section>
-    <section class="container">
+    <section class="container shadow">
         <ul id="js-bookmark-list" class="bookmark-list"></ul>
     </section>
     `;
@@ -91,7 +91,7 @@ const generateFormHTML = () => {
 
 const generateBookmarkItem = (bookmark, bookmarkIcon) => {
   return `
-      <li class="js-bookmark-item shadow" data-item-id="${bookmark.id}">
+      <li class="js-bookmark-item" data-item-id="${bookmark.id}">
         <div class="top-half" tabindex=0>
           <h2>${bookmark.title}</h2>
         </div>
@@ -150,8 +150,8 @@ const generateExpandBookmarkByClass = (bookmark) => {
                 </label>
             </div>
             <div class="right-side">
-                <button class="js-bookmark-save expand-buttons shadow" aria-label="click to save bookmark"><span class="buttonLabel">save</span></button>
-                <button class="js-bookmark-delete expand-buttons shadow" aria-label="click to delete bookmark"><span class="buttonLabel">delete</span></button>
+                <button class="js-bookmark-save expand-buttons" aria-label="click to save bookmark"><span class="buttonLabel">save</span></button>
+                <button class="js-bookmark-delete expand-buttons" aria-label="click to delete bookmark"><span class="buttonLabel">delete</span></button>
             </div>
         </div>
     </li>

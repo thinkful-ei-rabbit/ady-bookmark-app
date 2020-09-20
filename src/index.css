@@ -17,7 +17,8 @@ body {
 }
 
 .container {
-  background-color: rgb(255, 255, 255, 0.7);
+  background-color: rgb(132, 148, 131, 0.5);
+  margin-top: 16px;
   padding: 12px;
 }
 
@@ -26,7 +27,7 @@ main {
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 2.6em;
   font-variant: small-caps;
   text-align: center;
   margin: 0 auto .33em;
@@ -45,13 +46,13 @@ h3 {
 }
 
 .bookmark-list>li {
-  border: 1px solid #F79FFF;
+  border: 1px solid #B4656F;
   display: flex;
   flex-direction: column;
 }
 
 .bookmark-name {
-  background-color: #F6BEFC;
+  background-color: #4E937A;
   margin: 0;
   padding: 0;
 }
@@ -89,16 +90,16 @@ label {
 .flex-button {
   padding: 10px 16px;
   border-radius: 16px;
-  border: solid #FFFFFF;
-  background-color: #F79FFF;
-  color: #FFFFFF;
+  border: solid #C7F2A7;
+  background-color: #FFFFFF;
+  color: #B4656F;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
   margin: auto;
 }
 
 .flex-button:hover {
-  background-color: #F79FFF
+  background-color: #C7F2A7
 }
 
 button,
@@ -120,23 +121,23 @@ button:hover {
 
 button:active {
   
-  box-shadow: 3px 3px 6px #cccccc;
+  box-shadow: 3px 3px 6px #948392;
 }
 
 .expand-buttons {
   min-width: 75px;
   padding: 10px 16px;
   border-radius: 16px;
-  border: solid #E5E5E5;
-  background-color: #F79FFF;
-  color: #FFFFFF;
+  border: solid #C7F2A7;
+  background-color: #FFFFFF;
+  color: #B4656F;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   margin: auto;
 }
 
 .expand-buttons:hover {
-  background-color: #F79FFF
+  background-color: #C7F2A7
 }
 
 .add-button {
@@ -145,28 +146,28 @@ button:active {
   min-width: 75px;
   padding: 9px 16px;
   border-radius: 16px;
-  border: solid #E5E5E5;
-  background-color: #F79FFF;
-  color: #FFFFFF;
+  border: solid #C7F2A7;
+  background-color: #FFFFFF;
+  color: #B4656F;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 16px;
   margin: auto;
  }
  
 .add-button:hover {
-  background-color: #F6BEFC
+  background-color: #C7F2A7
 }
 
 /* ---------- List Styles ---------- */ 
 .top-half {
-  background-color: rgb(247, 159, 255, 0.7);
+  background-color: rgb(180, 101, 111, 0.55);
   flex: 1;
   padding: 1rem;
   
 }
 
 .bottom-half {
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: none;
   flex: 1;
   padding: 1rem;
 }
@@ -181,8 +182,6 @@ button:active {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding-left: 12px;
-  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .flex-details {
@@ -199,7 +198,7 @@ input {
 }
 
 .shadow {
-  box-shadow: 6px 6px 6px #cccccc;
+  box-shadow: 6px 6px 6px #948392;
 }
 
 .textarea-newadd {
@@ -277,26 +276,26 @@ fieldset {
 }
 
 .rating label:last-child .icon {
-  color: #cccccc;
+  color: #948392;
 }
 
 .rating:not(:hover) label input:checked~.icon,
 .rating:hover label:hover input~.icon {
-  color: #F79FFF;
+  color: #C7F2A7;
 }
 
 .rating label input:focus:not(:checked)~.icon:last-child {
-  color: #cccccc;
+  color: #948392;
 }
 
 .background-barvees {
-  color: #cccccc;
+  color: #948392;
   position: absolute;
   z-index: 1;
 }
 
 .colored-barvees {
-  color: #F79FFF;
+  color: #B4656F;
   position: absolute;
   z-index: 2;
 }
