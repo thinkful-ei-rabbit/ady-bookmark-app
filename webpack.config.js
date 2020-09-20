@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/docs',
+    path: __dirname + '/dist',
     publicPath: '/ady-bookmark-app/',
     filename: 'index_bundle.js'
   },

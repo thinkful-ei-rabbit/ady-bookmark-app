@@ -11,7 +11,8 @@ const generateHomePageHTML = () => {
         <div class="error-container shadow"></div>
         <div class="even-flex js-add-bookmark-button ">
           <button class='js-add-bookmark shadow'></button>
-          <select class='js-filter-rating shadow'>
+          <label for='fltr'></label>
+          <select class='js-filter-rating shadow' id='fltr'>
             <option value="0">Filter</option>
             <option value="1">1+ &barvee;</option>
             <option value="2">2+ &barvee;</option>
@@ -33,45 +34,48 @@ const generateFormHTML = () => {
     <form id="js-add-new-bookmark-form" class="js-add-new-bookmark-form">
         <span class="even-flex flex-direction">
             <fieldset class="flex-desktop">
+                <label for='bookName'></label>
                 <input type="text" id="bookName" name="title" class="js-bookmark-title-entry" placeholder="title" required/>
             </fieldset>
         </span>
         <span>
             <fieldset>
+                <label for='addDescr'></label>
                 <textarea name="desc" id="addDescr" class="js-bookmark-desc-entry textarea-newadd" maxlength="300" placeholder="description" required></textarea>
             </fieldset>
         </span>
         <span>
             <fieldset class="flex-desktop">
+                <label for='siteURL'></label>
                 <input type="text" id="siteURL" name="url" class="js-bookmark-url-entry" placeholder="url" required/>
             </fieldset>
         </span>
         <span class="flex-between">
             <div class="rating left-side barvee-size" aria-label="choose your rating">
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="1" required/>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="1" required/>
                     <span class="icon">&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="2" />
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="2" />
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="3" />
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="3" />
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>   
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="4" />
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="4" />
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="5" />
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="5" />
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
                     <span class="icon">&barvee;</span>
@@ -112,34 +116,35 @@ const generateExpandBookmarkByClass = (bookmark) => {
             <div class="flex-link">
                 <button class="flex-button" aria-label="click to visit bookmark" onclick=" window.open('${bookmark.url}','_blank')">visit</button>
             </div>
-            <textarea name="desc" class="js-bookmark-desc-entry flex-desc" maxlength="300" required>${bookmark.desc}</textarea>
+            <label for='desc'></label>
+            <textarea id='desc' name="desc" class="js-bookmark-desc-entry flex-desc" maxlength="300" required>${bookmark.desc}</textarea>
         </div>
         <div class="bottom-half flex-between">
             <div class="rating left-side barvee-size>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="1" ${bookmark.rating == 1 ? 'checked' : '' } required/>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="1" ${bookmark.rating == 1 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="2" ${bookmark.rating == 2 ? 'checked' : '' } required/>
-                    <span class="icon"&barvee;</span>
-                    <span class="icon"&barvee;</span>
-                </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="3" ${bookmark.rating == 3 ? 'checked' : '' } required/>
-                    <span class="icon"&barvee;</span>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="2" ${bookmark.rating == 2 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="4" ${bookmark.rating == 4 ? 'checked' : '' } required/>
-                    <span class="icon"&barvee;</span>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="3" ${bookmark.rating == 3 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
-                    <input type="radio" name="rating" class="js-bookmark-rating-entry" value="5" ${bookmark.rating == 5 ? 'checked' : '' } required/>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="4" ${bookmark.rating == 4 ? 'checked' : '' } required/>
+                    <span class="icon"&barvee;</span>
+                    <span class="icon"&barvee;</span>
+                    <span class="icon"&barvee;</span>
+                    <span class="icon"&barvee;</span>
+                </label>
+                <label for='rating'></label>
+                    <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="5" ${bookmark.rating == 5 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
@@ -236,6 +241,7 @@ const handleExpandedBookmarkView = () => {
     store.findAndUpdate(bookmarkId, {expand: !bookmark.expand});
     render();
     store.bookmarks.forEach(bookmark => bookmark.expand = false);
+    render();
   });
 }; 
 
