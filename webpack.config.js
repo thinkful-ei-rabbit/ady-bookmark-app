@@ -4,6 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
+    publicPath: '/webpack-demo/',
     filename: 'index_bundle.js'
   },
   mode: 'development',
