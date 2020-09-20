@@ -118,29 +118,29 @@ const generateExpandBookmarkByClass = (bookmark) => {
         </div>
         <div class="bottom-half flex-between">
             <div class="rating left-side barvee-size>
-                <label>
+                <label for='rating'>
                     <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="1" ${bookmark.rating == 1 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
+                <label for='rating'>
                     <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="2" ${bookmark.rating == 2 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
+                <label for='rating'>
                     <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="3" ${bookmark.rating == 3 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
+                <label for='rating'>
                     <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="4" ${bookmark.rating == 4 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
                 </label>
-                <label>
+                <label for='rating'>
                     <input type="radio" id='rating' name="rating" class="js-bookmark-rating-entry" value="5" ${bookmark.rating == 5 ? 'checked' : '' } required/>
                     <span class="icon"&barvee;</span>
                     <span class="icon"&barvee;</span>
