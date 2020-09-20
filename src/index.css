@@ -16,6 +16,11 @@ body {
   background-attachment: fixed;
 }
 
+.container {
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 12px;
+}
+
 main {
   margin: 0 auto;
 }
@@ -41,7 +46,6 @@ h3 {
 
 .bookmark-list>li {
   border: 1px solid #F79FFF;
-  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -177,6 +181,8 @@ button:active {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-left: 12px;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .flex-details {
@@ -198,6 +204,9 @@ input {
 
 .textarea-newadd {
   width: 100%;
+  border: none;
+  font-variant: small-caps;
+  font-size: 1.1rem;
 }
 
 .js-bookmark-url-entry,
@@ -211,6 +220,7 @@ input {
 
 fieldset {
   max-width: 100%;
+  border: none;
 }
 
 /*------- Rating Styles --------*/
@@ -264,7 +274,6 @@ fieldset {
 .rating label .icon {
   float: left;
   color: transparent;
-  padding-top: 16px;
 }
 
 .rating label:last-child .icon {
@@ -304,7 +313,7 @@ fieldset {
 
   button.js-add-bookmark,
   select.js-filter-rating {
-      width: 110px;
+      width: 125px;
       min-width: 0px;
   }
 
