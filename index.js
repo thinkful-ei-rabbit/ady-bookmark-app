@@ -1,8 +1,8 @@
-import './index.css';
+import './src/index.css';
 import $ from 'jquery';
-import api from './scripts/api';
-import store from './scripts/store';
-import bookmarks from './scripts/bookmarks';
+import api from './src/scripts/api';
+import store from './src/scripts/store';
+import bookmarks from './src/scripts/bookmarks';
 
 const main = function () {
   api.getBookmarks()
