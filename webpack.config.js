@@ -4,7 +4,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/docs',
-    publicPath: '/webpack-demo/',
+    publicPath: '/ady-bookmark-app/',
     filename: 'index_bundle.js'
   },
   mode: 'development',
